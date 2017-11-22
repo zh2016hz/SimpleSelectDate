@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/img_cancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:text="取消"
+         android:textColor="#414341"
+         android:textSize="18sp"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/img_ensure"
+         android:layout_alignParentRight="true"
+         android:padding="10dp"
+         android:text="确定"
+         android:textColor="#414341"
+         android:textSize="18sp"
+         />
+ </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#66888888"/>
+
+    <include
+        android:id="@+id/date_select"
+        layout="@layout/date_select_layout"/>
+</LinearLayout>
